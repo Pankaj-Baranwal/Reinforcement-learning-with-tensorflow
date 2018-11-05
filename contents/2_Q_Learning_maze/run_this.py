@@ -19,7 +19,7 @@ from RL_brain import QLearningTable
 def update():
     for episode in range(100):
         # initial observation
-        observation = env.reset()
+        observation = env.resept()
 
         while True:
             # fresh env
@@ -44,6 +44,7 @@ def update():
     # end of game
     print('game over')
     env.destroy()
+
 
 if __name__ == "__main__":
     env = Maze()
